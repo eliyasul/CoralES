@@ -53,18 +53,20 @@
     <div class="card">
         <h2>🧪 הזנת נתונים - <span id="currentSysName">מערכת 1</span></h2>
         <div class="input-group" style="margin-bottom:15px;"><label>תאריך</label><input type="date" id="logDate" onchange="loadData()"></div>
+
         <div class="grid">
-            <div class="input-group"><label>מליחות</label><input type="number" id="vSal" step="0.1" oninput="val(this,33.5,37.5)"></div>
-            <div class="input-group"><label>טמפ'</label><input type="number" id="vTemp" step="0.1" oninput="val(this,23.5,26.5)"></div>
-            <div class="input-group"><label>pH</label><input type="number" id="vPH" step="0.01" oninput="val(this,7.5,8.9)"></div>
+            <div class="input-group"><label>מליחות</label><input type="number" inputmode="decimal" id="vSal" step="0.1" oninput="val(this,33.5,37.5)"></div>
+            <div class="input-group"><label>טמפ'</label><input type="number" inputmode="decimal" id="vTemp" step="0.1" oninput="val(this,23.5,26.5)"></div>
+            <div class="input-group"><label>pH</label><input type="number" inputmode="decimal" id="vPH" step="0.01" oninput="val(this,7.5,8.9)"></div>
         </div>
-        <div class="grid">
-            <div class="input-group"><label>מגנזיום</label><input type="number" id="vMg"></div>
-            <div class="input-group"><label>אלקליניות</label><input type="number" id="vAlk" step="0.1"></div>
+  
+      <div class="grid">
+            <div class="input-group"><label>מגנזיום</label><input type="number" id="vMg" inputmode="numeric"></div>
+            <div class="input-group"><label>אלקליניות</label><input type="number" id="vAlk" step="0.1" inputmode="numeric"></div>
             <div class="input-group"><label>קלציום</label><input type="number" id="vCa"></div>
-            <div class="input-group"><label>ניטריט</label><input type="number" id="vNO2" step="0.01"></div>
-            <div class="input-group"><label>ניטראט</label><input type="number" id="vNO3" step="0.1"></div>
-            <div class="input-group"><label>פוספט</label><input type="number" id="vPO4" step="0.01"></div>
+            <div class="input-group"><label>ניטריט</label><input type="number" id="vNO2" step="0.01" inputmode="numeric"></div>
+            <div class="input-group"><label>ניטראט</label><input type="number" id="vNO3" step="0.1" inputmode="numeric"></div>
+            <div class="input-group"><label>פוספט</label><input type="number" id="vPO4" step="0.01" inputmode="numeric"></div>
         </div>
         <button class="save-btn" onclick="saveAll()">שמור הכל להיום ולענן</button>
     </div>
